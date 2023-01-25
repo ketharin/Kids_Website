@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+body{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-image: url("img/home_image.jpg");
+ background-size: cover;
+ height: 50vh;
+ overflow: hidden;
+ font-family: 'Noto Sans TC', sans-serif;
+}
+.center{
+ width: 390px;
+ margin: 100px auto;
+ position: relative;
+
+}
+.center .header{
+ font-size: 28px;
+ font-weight: bold;
+ color: white;
+ padding: 25px 0 30px 25px;
+ background: #B9770E;
+ border-bottom: 1px solid #FBEEE6;
+ border-radius: 5px 5px 0 0;
+}
+.center form{
+ position: absolute;
+ background: #FDEBD0;
+ width: 100%;
+ padding: 50px 10px 0 30px;
+ box-sizing: border-box;
+ border: 1px solid #FBEEE6;
+ border-radius: 0 0 5px 5px;
+}
+form input{
+ height: 50px;
+ width: 90%;
+ padding: 0 10px;
+ border-radius: 3px;
+ border: 1px solid #FBEEE6;
+ font-size: 18px;
+ outline: none;
+}
+form input[type="password"]{
+ margin-top: 20px;
+}
+form i{
+ position: absolute;
+ font-size: 25px;
+ color: #FBEEE6 ;
+ margin: 15px 0 0 -45px;
+}
+i.fa-lock{
+ margin-top: 35px;
+}
+form #email_error,
+form #password_error{
+    margin-top: 5px;
+    width: 90%;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    /*border: 1px solid #EF9A9A;*/
+    display: none;
+}
+form input[type="submit"]{
+ margin-top: 40px;
+ margin-bottom: 40px;
+ width: 130px;
+ height: 45px;
+ color: white;
+ cursor: pointer;
+ line-height: 45px;
+ border-radius: 45px;
+ border-radius: 5px;
+ background: #F5B041 ;
+}
+form input[type="submit"]:hover{
+ background: #B9770E;
+ transition: .5s;
+}
+form a{
+ text-decoration: none;
+ font-size: 18px;
+ color: #F5B041 ;
+ padding: 0 0 0 20px;
+}
+form a:hover{
+   text-decoration: underline;
+}
