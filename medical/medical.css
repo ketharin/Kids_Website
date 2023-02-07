@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:1;
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#F9F0F5;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#F9E4EF;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#fd472d 40%,#c39d22 ,#c3c322);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .logo i{
+    color:var(--orange);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--orange);
+}
+
+.header .navbar a:hover{
+    color:#F0BC79;
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: var(--orange);
+    color:#fff;
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+   background: #eee;
+    color:var(--black);
+
+}
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width: 50rem;
+    height:5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    height:100%;
+    width:100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:0 1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color:var(--orange);
+}
+/*    ///// Medical part starts/////   */
+
+
+.med_header{ 
+    margin-left:auto;
+	margin-right:auto;
+	color:var(--orange);
+	text-align:center;
+	font-size:40px;
+	margin-top:20px;
+	
+
+
+}
+
+
+#blog-container{
+	
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:5vw;
+}
+	
+	
+	#blog-container .blogs{
+		width:60%;
+		
+	}
+	
+	#blog-container .blogs img{
+		width:100%;
+		height:320px;
+		border-radius:19px;
+	}
+	
+	#blog-container .blogs .post{
+	padding-bottom:60px;
+	}
+		
+		
+	
+	#blog-container .blogs .post h3{
+		color:var(--orange);
+		padding:15px 0 10px 0;
+		font-size:30px;
+	}
+	
+	#blog-container .blogs .post p{
+		color:black;
+		padding-bottom:20px;
+		font-size:15px;
+	}
+		
+	#blog-container .blogs .post a{
+		text-decoration:none;
+		font-size:1.5rem;
+		padding:13px 35px;
+		background-color:var(--orange);
+		color:white;
+		border-radius:5px;
+		font-weight:600;
+
+	}
+	
+	#blog-container .cate{
+      width:30%;
+	}
+	
+	#blog-container .cate h2{
+		padding-bottom:7px;
+		font-size:2rem;		
+	}
+	#blog-container .cate a{
+		text-decoration:none;
+		font-size:1.5rem;
+		color:var(--orange);
+		font-weight:500;
+		line-height:45px;
+	}
+	
+	/*post 1 atart*/
+	
+	#blog-container .blogpost{
+		width:60%;
+		margin:0 auto;
+	}
+	#blog-container .blogpost p{
+		text-align:justify;
+		text-decoration:none;
+		line-height: 1.8;
+		font-size:55px;
+	}
