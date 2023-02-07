@@ -1,2 +1,2 @@
-# Kids_Website
+# Kids_website
 https://ketharin.github.io/Kids_website/
